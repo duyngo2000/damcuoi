@@ -1375,15 +1375,8 @@
 
         let btn = document.querySelector(".music-btn")
 
-        // m.paused ? m.play() : m.pause()
-
-        if (m.paused) {
-          m.play()
-          btn.classList.remove("off")
-        } else {
-          m.pause()
-          btn.classList.add("off")
-        }
+        m.paused ? m.play() : m.pause()
+        m.paused ? btn.classList.add("off") : btn.classList.remove("off")
       }
     </script>
   </body>
